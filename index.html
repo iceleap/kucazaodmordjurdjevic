@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Početna Stranica</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <header>
+        <nav class="nav">
+          <div class="nav-btn nav-mobile">
+            <a href="#main">Smeštaj</a>
+            <a href="#location">Lokacija</a>
+            <a href="#contact">Kontakt</a>
+          </div>
+
+          <div class="nav-lang-contact nav-mobile">
+            <div class="nav-lang">
+              <a href="index.html">
+                <img src="img/serbia.png" alt="Serbian flag" />
+              </a>
+              <a href="en/index.html">
+                <img src="img/united-kingdom.png" alt="UK flag" />
+              </a>
+            </div>
+            <div class="nav-contact">
+              <div class="phone">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                  class="phone-svg"
+                >
+                  <path
+                    d="M176,16H80A24,24,0,0,0,56,40V216a24,24,0,0,0,24,24h96a24,24,0,0,0,24-24V40A24,24,0,0,0,176,16ZM72,64H184V192H72Zm8-32h96a8,8,0,0,1,8,8v8H72V40A8,8,0,0,1,80,32Zm96,192H80a8,8,0,0,1-8-8v-8H184v8A8,8,0,0,1,176,224Z"
+                  ></path>
+                </svg>
+                <a href="#"> +381 64 1234567</a>
+              </div>
+              <a href="#contact" class="reserve-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                  class="reserve-btn-svg"
+                >
+                  <path
+                    d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                  ></path>
+                </svg>
+                <span style="font-size: 1.6rem">Rezervišite</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="mobile-nav-btns hidden">
+          <div class="mobile-nav-menu mobile-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="mobile-nav-close mobile-button hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="nav-img">
+          <img src="img/logo.svg" alt="Logo of a cabin in a forest" />
+        </div>
+        <h1 class="header-h1">Vikendica Đurđević</h1>
+      </header>
+    </div>
+    <main id="main">
+      <div class="component">
+        <h3 id="smestaj" class="module">Smeštaj</h3>
+        <h1 class="caption">Boravite u srcu Divčibara</h1>
+        <p class="passus">
+          Ovde vas čekaju beskrajni pejzaži, svež planinski vazduh i trenutci
+          koje ćete pamtiti zauvek. Bilo da dolazite sa porodicom, prijateljima
+          ili u paru, naša vikendica pruža savršeno mesto za odmor i
+          istraživanje šuma, staza i skrivenih kutaka ovog rajskog mesta.
+        </p>
+      </div>
+      <div class="carousel">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/5.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/6.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/1.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/3.jpg" alt="" /></div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev swiper-button"></div>
+          <div class="swiper-button-next swiper-button"></div>
+        </div>
+      </div>
+      <div class="component">
+        <h3 class="module">Oprema & Usluge</h3>
+        <h1 class="caption">Uživajte u komotnom smeštaju</h1>
+        <p class="passus">
+          Naš smeštaj je pažljivo osmišljen kako bi vam pružio maksimalan komfor
+          i ispunio sve vaše potrebe. Uživajte u brojnim pogodnostima i uslugama
+          koje smo uključili kako bismo vaš boravak učinili prijatnim i
+          bezbrižnim. Bilo da tražite opuštanje, praktičnost ili udobnost,
+          mislili smo na svaki detalj kako bismo vam obezbedili nezaboravno
+          iskustvo.
+        </p>
+      </div>
+      <div class="icon-grid">
+        <div class="cell">
+          <div class="cell-svg-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="cell-svg"
+            >
+              <path
+                d="M140,204a12,12,0,1,1-12-12A12,12,0,0,1,140,204ZM237.08,87A172,172,0,0,0,18.92,87,8,8,0,0,0,29.08,99.37a156,156,0,0,1,197.84,0A8,8,0,0,0,237.08,87ZM205,122.77a124,124,0,0,0-153.94,0A8,8,0,0,0,61,135.31a108,108,0,0,1,134.06,0,8,8,0,0,0,11.24-1.3A8,8,0,0,0,205,122.77Zm-32.26,35.76a76.05,76.05,0,0,0-89.42,0,8,8,0,0,0,9.42,12.94,60,60,0,0,1,70.58,0,8,8,0,1,0,9.42-12.94Z"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="cell-h">WiFi</h2>
+          <p class="cell-p">
+            Ostanite povezani tokom odmora zahvaljujući besplatnom Wi-Fi
+            internetu u objektu.
+          </p>
+        </div>
+        <div class="cell">
+          <div class="cell-svg-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="cell-svg"
+            >
+              <path
+                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm8-136H104a8,8,0,0,0-8,8v80a8,8,0,0,0,16,0V152h24a36,36,0,0,0,0-72Zm0,56H112V96h24a20,20,0,0,1,0,40Z"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="cell-h">Privatan parking</h2>
+          <p class="cell-p">
+            Gostima je na raspolaganju obezbeđen parking prostor za bezbrižan
+            dolazak i boravak.
+          </p>
+        </div>
+        <div class="cell">
+          <div class="cell-svg-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="cell-svg"
+            >
+              <path
+                d="M248,128H200.94l-28-56H192a8,8,0,0,0,0-16H64a8,8,0,0,0,0,16H83.06l-28,56H8a8,8,0,0,0,0,16H47.06L24.84,188.42a8,8,0,0,0,3.58,10.73A7.9,7.9,0,0,0,32,200a8,8,0,0,0,7.17-4.42L64.94,144H191.06l25.78,51.58A8,8,0,0,0,224,200a7.9,7.9,0,0,0,3.57-.85,8,8,0,0,0,3.58-10.73L208.94,144H248a8,8,0,0,0,0-16ZM72.94,128l28-56h54.12l28,56Z"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="cell-h">Terasa</h2>
+          <p class="cell-p">
+            Uživajte na prostranoj terasi (24 m²) sa zidanim roštiljem, idealnoj
+            za opuštanje i obroke na otvorenom.
+          </p>
+        </div>
+        <div class="cell">
+          <div class="cell-svg-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="cell-svg"
+            >
+              <path
+                d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="cell-h">Smeštaj</h2>
+          <p class="cell-p">
+            Kuća od 80 m² nudi prizemlje sa dnevnim boravkom, opremljenom
+            kuhinjom i kupatilom, kao i sprat sa dve spavaće sobe i dodatnim
+            toaletom.
+          </p>
+        </div>
+        <div class="cell">
+          <div class="cell-svg-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="cell-svg"
+            >
+              <path
+                d="M216,72H32V48a8,8,0,0,0-16,0V208a8,8,0,0,0,16,0V176H240v32a8,8,0,0,0,16,0V112A40,40,0,0,0,216,72ZM32,88h72v72H32Zm88,72V88h96a24,24,0,0,1,24,24v48Z"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="cell-h">Kreveti</h2>
+          <p class="cell-p">
+            Kapacitet smeštaja obuhvata 6 kreveta – bračni krevet, dva singl
+            kreveta, krevete na sprat i kauč na razvlačenje.
+          </p>
+        </div>
+        <div class="cell">
+          <div class="cell-svg-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="cell-svg"
+            >
+              <path
+                d="M200,24H72A24,24,0,0,0,48,48V216a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V48a8,8,0,0,1,16,0V152a8,8,0,0,0,16,0V48A24,24,0,0,0,200,24ZM72,40H177.37A23.84,23.84,0,0,0,176,48V184H64V48A8,8,0,0,1,72,40ZM64,216V200H176v16Z"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="cell-h">Kompletna posteljina</h2>
+          <p class="cell-p">
+            Obezbeđeni su čisti peškiri i posteljina za udoban i prijatan
+            boravak.
+          </p>
+        </div>
+      </div>
+      <div class="location-wrapper" id="location">
+        <div class="location">
+          <div class="location-1">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1276.0270253877122!2d19.98063606948653!3d44.11258045967565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4759dd00454ec237%3A0xa60ed7517e0b7a23!2zS3XEh2EgemEgb2Rtb3IgxJB1csSRZXZpxIcsRGl2xI1pYmFyZQ!5e0!3m2!1sen!2srs!4v1733414966292!5m2!1sen!2srs"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="gmap"
+              ></iframe>
+            </div>
+            <div class="component">
+              <div class="module">Nalazimo se</div>
+              <div class="caption">Gde su Divčibare najlepše</div>
+              <div class="passus">
+                Kuća za odmor Đurđević smeštena je u mirnom delu Divčibara, na
+                samo 1.1 km od centra i u blizini Dečjeg odmarališta Stevan
+                Filipović. Nalazimo se u prirodnom okruženju koje odiše mirom i
+                tišinom, idealnom za odmor sa porodicom ili prijateljima.
+              </div>
+              <div class="location-flex">
+                <div class="cell">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                    class="cell-svg alternative"
+                  >
+                    <path
+                      d="M172,88a28,28,0,1,0-28-28A28,28,0,0,0,172,88Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,172,48ZM32.32,77.76a8,8,0,0,1,9.92-5.44L112,92.67l10.32-10.33a8,8,0,0,1,11.32,0L163.31,112H200a8,8,0,0,1,0,16H160a8,8,0,0,1-5.66-2.34L148.73,120l-111-32.36A8,8,0,0,1,32.32,77.76ZM236.44,204.24a69.78,69.78,0,0,1-58.37,8.95L21.77,167.67a8,8,0,1,1,4.47-15.36l76,22.13L128.73,148,85.8,135.69a8,8,0,0,1,4.4-15.39l56,16a8,8,0,0,1,3.46,13.35l-29.9,29.9,62.79,18.28a53.78,53.78,0,0,0,45-6.9,8,8,0,1,1,8.88,13.31Z"
+                    ></path>
+                  </svg>
+                  <div class="cell-h alternative">Skijanje</div>
+                  <div class="cell-p alternative">
+                    Smeštaj se nalazi na samo 3.2 km od nove ski staze,
+                    pružajući savršen pristup za ljubitelje zimskih sportova.
+                  </div>
+                </div>
+                <div class="cell">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                    class="cell-svg alternative"
+                  >
+                    <path
+                      d="M152,80a32,32,0,1,0-32-32A32,32,0,0,0,152,80Zm0-48a16,16,0,1,1-16,16A16,16,0,0,1,152,32Zm48,112v88a8,8,0,0,1-16,0V151.66c-25.75-2.25-34.35-15.52-42-27.36-2.85-4.39-5.56-8.57-9.13-12.19l-13.4,30.81,37.2,26.57A8,8,0,0,1,160,176v56a8,8,0,0,1-16,0V180.12l-31.07-22.2L79.34,235.19A8,8,0,0,1,72,240a7.84,7.84,0,0,1-3.19-.67,8,8,0,0,1-4.14-10.52L122.19,96.5a8,8,0,0,1,11-3.92,40.92,40.92,0,0,1,8,5.47c6.37,5.52,10.51,11.91,14.16,17.55,7.68,11.84,13.22,20.4,36.6,20.4A8,8,0,0,1,200,144ZM72,152a8,8,0,0,0,7.35-4.85l24-56a8,8,0,0,0-4.2-10.5l-28-12a8,8,0,0,0-10.5,4.2l-24,56a8,8,0,0,0,4.2,10.5l28,12A8,8,0,0,0,72,152ZM54.51,127.8,72.2,86.5l13.3,5.7L67.8,133.49Z"
+                    ></path>
+                  </svg>
+                  <div class="cell-h alternative">Pešačenje</div>
+                  <div class="cell-p alternative">
+                    Kuća je idealna polazna tačka za pešačke ture do Golubca,
+                    vodopada Skakalo, Ljutog krša i drugih prirodnih atrakcija
+                    Divčibara.
+                  </div>
+                </div>
+                <div class="cell merge">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                    class="cell-svg alternative"
+                  >
+                    <path
+                      d="M164,80a28,28,0,1,0-28-28A28,28,0,0,0,164,80Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,164,40Zm36,96a40,40,0,1,0,40,40A40,40,0,0,0,200,136Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,200,200ZM56,136a40,40,0,1,0,40,40A40,40,0,0,0,56,136Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,56,200Zm136-80H152a8,8,0,0,1-5.66-2.34L120,91.31,99.31,112l34.35,34.34A8,8,0,0,1,136,152v48a8,8,0,0,1-16,0V155.31L82.34,117.66a8,8,0,0,1,0-11.32l32-32a8,8,0,0,1,11.32,0L155.31,104H192a8,8,0,0,1,0,16Z"
+                    ></path>
+                  </svg>
+                  <div class="cell-h alternative">Biciklizam</div>
+                  <div class="cell-p alternative">
+                    Divčibare nude brojne biciklističke staze za istraživanje
+                    prirode na dva točka – idealno za avanturiste svih uzrasta.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="location-img-slider-wrapper">
+            <div class="location-img-slider">
+              <img class="up" src="img/slider1.jpg" alt="" />
+              <img class="down" src="img/slider2.jpg" alt="" />
+              <img class="up" src="img/slider3.jpg" alt="" />
+              <img class="down" src="img/slider4.jpg" alt="" />
+              <img class="up" src="img/slider5.jpg" alt="" />
+              <img class="down" src="img/slider6.jpg" alt="" />
+            </div>
+            <div class="location-img-slider">
+              <img class="up" src="img/slider1.jpg" alt="" />
+              <img class="down" src="img/slider2.jpg" alt="" />
+              <img class="up" src="img/slider3.jpg" alt="" />
+              <img class="down" src="img/slider4.jpg" alt="" />
+              <img class="up" src="img/slider5.jpg" alt="" />
+              <img class="down" src="img/slider6.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="component">
+        <div class="module">Vremenska prognoza</div>
+        <div class="caption">Divčibare</div>
+      </div>
+      <div class="weather">
+        <div class="today">
+          <div class="today-wrapper">
+            <div class="weather-cell">
+              <div class="weather-day">Trenutno</div>
+              <div class="weather-icon">
+                <img
+                  class="weather-icon-1"
+                  src="     http://openweathermap.org/img/wn/01d@2x.png "
+                  alt="Ikonica za vremensku prognozu"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="weather-temp">0°C</div>
+        </div>
+        <div class="other-days">
+          <div class="day-1 day">
+            <div class="weather-cell">
+              <div class="weather-day">Sutra</div>
+              <div class="weather-icon">
+                <img
+                  class="weather-icon-2"
+                  src="     http://openweathermap.org/img/wn/01d@2x.png "
+                  alt="Ikonica za vremensku prognozu"
+                />
+              </div>
+              <div class="weather-temp">0°C / 0°C</div>
+            </div>
+          </div>
+          <div class="day-2 day">
+            <div class="weather-cell">
+              <div class="weather-day">Prekosutra</div>
+              <div class="weather-icon">
+                <img
+                  class="weather-icon-3"
+                  src="     http://openweathermap.org/img/wn/01d@2x.png "
+                  alt="Ikonica za vremensku prognozu"
+                />
+              </div>
+              <div class="weather-temp">0°C / 0°C</div>
+            </div>
+          </div>
+          <div class="day-3 day">
+            <div class="weather-cell">
+              <div class="weather-day">Nakosutra</div>
+              <div class="weather-icon">
+                <img
+                  class="weather-icon-4"
+                  src="     http://openweathermap.org/img/wn/01d@2x.png "
+                  alt="Ikonica za vremensku prognozu"
+                />
+              </div>
+              <div class="weather-temp">0°C / 0°C</div>
+            </div>
+          </div>
+          <div class="day-4 day">
+            <div class="weather-cell">
+              <div class="weather-day">Prekonakosutra</div>
+              <div class="weather-icon">
+                <img
+                  class="weather-icon-5"
+                  src="     http://openweathermap.org/img/wn/01d@2x.png "
+                  alt="Ikonica za vremensku prognozu"
+                />
+              </div>
+              <div class="weather-temp">0°C / 0°C</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact" id="contact">
+          <div class="contact-component-div">
+            <div class="contact-svg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"
+                ></path>
+              </svg>
+            </div>
+            <p>vikendicadjurdjevic@gmail.com</p>
+          </div>
+
+          <div class="contact-component-div">
+            <div class="contact-svg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M176,16H80A24,24,0,0,0,56,40V216a24,24,0,0,0,24,24h96a24,24,0,0,0,24-24V40A24,24,0,0,0,176,16ZM72,64H184V192H72Zm8-32h96a8,8,0,0,1,8,8v8H72V40A8,8,0,0,1,80,32Zm96,192H80a8,8,0,0,1-8-8v-8H184v8A8,8,0,0,1,176,224Z"
+                ></path>
+              </svg>
+            </div>
+            <p>+381 64 1234567</p>
+          </div>
+        </div>
+        <div class="contact-component-div contact-adress-div">
+          <img src="img/logo.svg" alt="" />
+          <div class="contact-adress">
+            <p>Stevana Filipovića 11B</p>
+            <p>Divčibare 253505</p>
+          </div>
+        </div>
+        <div class="contact-bottom">
+          <span>© 2024 Vikendica Đurđević • Sva prava zadržana</span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
