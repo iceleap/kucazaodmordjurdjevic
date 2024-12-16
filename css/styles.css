@@ -513,7 +513,7 @@ main {
   }
   nav {
     background-color: red;
-    height: 110%;
+    height: 110vh;
     top: -10%;
     width: 110%;
     align-items: center;
