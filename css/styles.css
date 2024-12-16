@@ -113,7 +113,7 @@ a {
 }
 header {
   background: linear-gradient(rgba(78, 78, 78, 0.25), rgba(145, 40, 40, 0.25)),
-    url(../img/cabinbg.png) no-repeat;
+    url(../img/cabinbg.webp) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
