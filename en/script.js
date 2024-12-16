@@ -406,7 +406,7 @@ fetchWeatherData().then((data) => {
       const daysOfWeek = [
         'Sunday',
         'Monday',
-        'Turesday',
+        'Tuesday',
         'Wednesday',
         'Thursday',
         'Friday',
